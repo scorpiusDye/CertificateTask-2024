@@ -1,0 +1,15 @@
+$hover-bg:#E8EFCF;
+@include media-breakpoint-up(xl) {
+    .hover-bg-green{
+        &:hover,&:active{
+            background-color: $hover-bg !important;
+        }
+    }
+    .hover-outline{
+        
+        &:hover{
+            outline: solid 5px $hover-bg;
+            
+        }
+    }
+}
