@@ -7,7 +7,7 @@ $hover-bg:#E8EFCF;
     }
     .hover-outline{
         
-        &:hover{
+        &:hover,&:active{
             outline: solid 5px $hover-bg;
             
         }
