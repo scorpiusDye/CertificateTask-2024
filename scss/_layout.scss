@@ -1,13 +1,12 @@
 $hover-bg:#E8EFCF;
 @include media-breakpoint-up(xl) {
-    .hover-bg-green{
-        &:hover,&:active{
+    .bg-green--hover{
+        &:hover,&:active,&:focus{
             background-color: $hover-bg !important;
         }
     }
-    .hover-outline{
-        
-        &:hover,&:active{
+    .outline--hover{
+        &:hover,&:active,&:focus{
             outline: solid 5px $hover-bg;
             
         }

@@ -587,8 +587,19 @@ $utilities: map-merge(
         visible: visible,
         invisible: hidden,
       )
-    )
+    ),
     // scss-docs-end utils-visibility
+    "object-fit": (
+      responsive: true,
+      property: object-fit,
+      values: (
+        contain: contain,
+        cover: cover,
+        fill: fill,
+        scale: scale-down,
+        none: none,
+      )
+    ),
   ),
   $utilities
 );
