@@ -243,6 +243,12 @@ $fontsize-list: (
 .pb-10{
     padding-bottom: 80px;
 }
+.py-xl-10{
+    @include media-breakpoint-up(xl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
 .py-blk-rwd{
     padding-top: 80px;
     padding-bottom: 80px;

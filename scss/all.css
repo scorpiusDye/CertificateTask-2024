@@ -13093,6 +13093,13 @@ table {
   padding-bottom: 80px;
 }
 
+@media (min-width: 1200px) {
+  .py-xl-10 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
 .py-blk-rwd {
   padding-top: 80px;
   padding-bottom: 80px;
