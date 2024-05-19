@@ -6,8 +6,71 @@
     <link rel="stylesheet" href="scss/all.css">
     <title>作品集</title>
 </head>
-<body>
-    <main class="container py-5">
+<body class="wrapper">
+    <nav class="px-2 py-1 nav-style d-flex align-items-center fixed-top">
+        <div class="nav-xl-blk d-flex justify-content-between align-items-center justify-content-xl-center">
+            <a href="#" class="">
+                <img src="images/logo.svg" class="logo" alt="Noel logo">
+            </a>
+            <a href="#">
+                <img src="images/menu.svg" class="menu" alt="Noel logo">
+            </a>
+            <ul class="d-none d-xl-flex">
+                <li class="position-relative nav-btn-blk me-5">
+                    <a href="#" class="text-decoration-none fz-16px text-dark link ">首頁</a>
+                    <span class="deco-nav-top-left"></span>
+                    <span class="deco-nav-top-right"></span>
+                    <span class="deco-nav-bottom-left"></span>
+                    <span class="deco-nav-bottom-right"></span>
+                </li>
+                <li class="position-relative nav-btn-blk me-5 ">
+                    <a href="#" class="text-decoration-none fz-16px text-dark link active">作品集</a>
+                    <span class="deco-nav-top-left opacity-1"></span>
+                    <span class="deco-nav-top-right opacity-1"></span>
+                    <span class="deco-nav-bottom-left opacity-1"></span>
+                    <span class="deco-nav-bottom-right opacity-1"></span>
+                </li>
+                <li class="position-relative nav-btn-blk me-5">
+                    <a href="#" class="text-decoration-none fz-16px text-dark link ">服務項目</a>
+                    <span class="deco-nav-top-left"></span>
+                    <span class="deco-nav-top-right"></span>
+                    <span class="deco-nav-bottom-left"></span>
+                    <span class="deco-nav-bottom-right"></span>
+                </li>
+                <li class="position-relative nav-btn-blk me-5">
+                    <a href="#" class="text-decoration-none fz-16px text-dark link ">部落格</a>
+                    <span class="deco-nav-top-left"></span>
+                    <span class="deco-nav-top-right"></span>
+                    <span class="deco-nav-bottom-left"></span>
+                    <span class="deco-nav-bottom-right"></span>
+                </li>
+                <li class="position-relative nav-btn-blk">
+                    <a href="#" class="text-decoration-none fz-16px text-dark link ">聯絡我</a>
+                    <span class="deco-nav-top-left"></span>
+                    <span class="deco-nav-top-right"></span>
+                    <span class="deco-nav-bottom-left"></span>
+                    <span class="deco-nav-bottom-right"></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bg-light px-5 pt-5 pb-10 d-xl-flex flex-column align-items-center">
+        <article class="text-center text-opacity-75 lh-base position-relative deco-quotation-marks mb-5">
+            <p class="fz-20px fz-xl-24px position-relative mb-1" style="z-index: 1;">讓使用者在觀賞與使用的旅程中，發現<span class="deco-underline">設計的價值</span></p>
+            <p class="fz-20px fz-xl-24px position-relative" style="z-index: 1;">而我在設計與開發的過程中，看見<span class="deco-underline">自己的價值</span></p>
+        </article>
+        <ul class="d-xl-flex">
+            <li class="d-flex flex-column align-items-center mb-3 maw-xl-300px me-xl-5">
+                <p class="fz-16px text-dark text-opacity-75 deco-border-bottom mb-1">2B經驗</p>
+                <p class="fz-16px text-center">內部監控系統、庫存系統、採購系統、行銷整合系統</p>
+            </li>
+            <li class="d-flex flex-column align-items-center maw-xl-300px">
+                <p class="fz-16px text-dark text-opacity-75 deco-border-bottom mb-1">2C經驗</p>
+                <p class="fz-16px text-center">跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</p>
+            </li>
+        </ul>
+    </section>
+    <main class="container py-blk-rwd">
         <ul class="row g-4">
             <li class="col-md-6">
                 <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="星際旅行訂票平台">
@@ -19,21 +82,21 @@
                     <h2 class="fs-3 fw-bold mb-1">
                         星際旅行訂票平台
                     </h2>
-                    <p class="text-info mb-3">
+                    <p class="text-secondary mb-3">
                         悠遊宇宙的夢想，從這裡開始實現
                     </p>
-                    <ul class="d-flex">
-                        <li class="me-1">
+                    <ul class="d-flex flex-wrap">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 網頁設計
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 響應式設計
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 bootstrap
                             </a>
@@ -42,7 +105,7 @@
                 </div>
             </li>
             <li class="col-md-6">
-                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="星際旅行訂票平台">
+                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="理財App">
                     <div class="ratio ratio-16x9">
                         <img src="./images/work-image2.png" alt="理財App" class="object-fit-cover">
                     </div>
@@ -51,21 +114,21 @@
                     <h2 class="fs-3 fw-bold mb-1">
                         理財App
                     </h2>
-                    <p class="text-info mb-3">
+                    <p class="text-secondary mb-3">
                         連動帳戶與行動支付，讓 AI 提供您最好的理財建議
                     </p>
-                    <ul class="d-flex">
-                        <li class="me-1">
+                    <ul class="d-flex flex-wrap">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 APP設計
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 iOS
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 React
                             </a>
@@ -74,7 +137,7 @@
                 </div>
             </li>
             <li class="col-md-6">
-                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="星際旅行訂票平台">
+                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="醫美診所官網">
                     <div class="ratio ratio-16x9">
                         <img src="./images/work-image3.png" alt="醫美診所官網" class="object-fit-cover">
                     </div>
@@ -83,21 +146,21 @@
                     <h2 class="fs-3 fw-bold mb-1">
                         醫美診所官網
                     </h2>
-                    <p class="text-info mb-3">
+                    <p class="text-secondary mb-3">
                         永保青春的秘密，從粹究開始
                     </p>
-                    <ul class="d-flex">
-                        <li class="me-1">
+                    <ul class="d-flex flex-wrap">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 網頁設計
                             </a> 
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 響應式設計 
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 ＷordPress
                             </a>
@@ -106,7 +169,7 @@
                 </div>
             </li>
             <li class="col-md-6">
-                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="星際旅行訂票平台">
+                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="美美美早餐店 POS 機 UI Design">
                     <div class="ratio ratio-16x9">
                         <img src="./images/work-image4.png" alt="美美美早餐店 POS 機 UI Design" class="object-fit-cover">
                     </div>
@@ -115,21 +178,21 @@
                     <h2 class="fs-3 fw-bold mb-1">
                         美美美早餐店 POS 機 UI Design
                     </h2>
-                    <p class="text-info mb-3">
+                    <p class="text-secondary mb-3">
                         訂單送單一目瞭然，自動報表分析好輕鬆
                     </p>
-                    <ul class="d-flex">
-                        <li class="me-1">
+                    <ul class="d-flex flex-wrap">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 UI 設計
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 前端開發
                             </a>
                         </li>
-                        <li class="me-1">
+                        <li class="me-1 mb-1 mb-md-0">
                             <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
                                 Wix
                             </a>
@@ -137,7 +200,112 @@
                     </ul>
                 </div>
             </li>
+            <li class="col-md-6">
+                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="電影院訂票系統">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/work-image5.png" alt="電影院訂票系統" class="object-fit-cover">
+                    </div>
+                </a>
+                <div class="p-1 p-xl-2">
+                    <h2 class="fs-3 fw-bold mb-1">
+                        電影院訂票系統
+                    </h2>
+                    <p class="text-secondary mb-3">
+                        三步驟完成訂票，電腦手機都支援
+                    </p>
+                    <ul class="d-flex flex-wrap">
+                        <li class="me-1 mb-1 mb-md-0">
+                            <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
+                                前端開發
+                            </a>
+                        </li>
+                        <li class="me-1 mb-1 mb-md-0">
+                            <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
+                                後端支援
+                            </a>
+                        </li>
+                        <li class="me-1 mb-1 mb-md-0">
+                            <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
+                                Vue
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="col-md-6">
+                <a href="#" class="d-block outline--hover rounded-2 overflow-hidden" aria-label="巧克巧克形象官網設計">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/work-image4.png" alt="巧克巧克形象官網設計" class="object-fit-cover">
+                    </div>
+                </a>
+                <div class="p-1 p-xl-2">
+                    <h2 class="fs-3 fw-bold mb-1">
+                        巧克巧克形象官網設計
+                    </h2>
+                    <p class="text-secondary mb-3">
+                        三步驟完成訂票，電腦手機都支援
+                    </p>
+                    <ul class="d-flex flex-wrap">
+                        <li class="me-1 mb-1 mb-md-0">
+                            <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
+                                UI 設計
+                            </a>
+                        </li>
+                        <li class="me-1 mb-1 mb-md-0">
+                            <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
+                                設計系統
+                            </a>
+                        </li>
+                        <li class="me-1 mb-1 mb-md-0">
+                            <a href="#" class="d-inline-block py-1 px-2 rounded-pill bg-light text-dark text-decoration-none bg-green--hover">
+                                網路電商
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <ul class="page-navigation d-flex justify-content-center">
+            <li class="">
+                <a href="#" class="d-flex justify-content-center align-items-center item item-active">1</a>
+            </li>
+            <li class="item d-flex justify-content-center align-items-center">
+                <a href="#" class="d-flex justify-content-center align-items-center item">2</a>
+            </li>
+            <li class="item d-flex justify-content-center align-items-center">
+                <a href="" class="d-flex justify-content-center align-items-center item">3</a>
+            </li>    
         </ul>
     </main>
+    <footer class="d-flex flex-column flex-xl-row py-5">
+        <section class="container d-xl-flex justify-content-between">
+            <div class="d-flex flex-column align-items-center align-items-xl-start justify-content-xl-center mb-5 mb-xl-0">
+                <img src="images/logo.svg" class="footer-logo mb-3" alt="Noel logo">
+                <p class="fs-6 mb-1">若有數位產品設計和開發相關問題</p>
+                <p class="fs-6 mb-3">歡迎填寫表單，或直接與我聯絡！</p>
+                <p class="fs-6 text-secondary">service@hexschool.com</p>
+            </div>
+            <ul class="w-100 w-xl-auto d-flex flex-column align-items-center align-items-xl-end">
+                <li class="fs-5">
+                    <a href="#" class="text-decoration-none d-flex align-items-center border rounded-2 bg-dark text-white w-300px">
+                        <img src="images/list.svg" class=" icon-set ms-3 me-1" alt="form-icon">
+                        <p>填寫表單</p>
+                    </a>
+                </li>
+                <li class="fs-5">
+                    <a href="#" class="text-decoration-none d-flex align-items-center border border-gray rounded-2 bg-white text-dark w-300px">
+                        <img src="images/instagram.svg" class=" icon-set ms-3 me-1" alt="ig-icon">
+                        <p>hexschool_demo</p>
+                    </a>
+                </li>
+                <li class="fs-5">
+                    <a href="#" class="text-decoration-none d-flex align-items-center border border-gray rounded-2 bg-white text-dark w-300px">
+                        <img src="images/facebook.svg" class=" icon-set ms-3 me-1" alt="ig-icon">
+                        <p>hexschoolTW</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>
