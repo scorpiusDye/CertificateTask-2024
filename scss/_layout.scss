@@ -182,7 +182,7 @@ $fontsize-list: (
         display: block;
         width: 64px;
         height: 64px;
-        background-image: url("/images/quote-left.png"); 
+        background-image: url("../images/quote-left.png"); 
         text-align: center;
         margin: 0 auto;        
     }
@@ -198,7 +198,7 @@ $fontsize-list: (
             display: block;
             width: 64px;
             height: 64px;
-            background-image: url("/images/quote-right.png"); 
+            background-image: url("../images/quote-right.png"); 
             margin-left: auto;
             right: -64px; 
         }
@@ -216,7 +216,7 @@ $fontsize-list: (
         width: 105%;
         z-index: -1;
         height: 6px;
-        background: url("/images/mark.png") no-repeat; 
+        background: url("../images/mark.png") no-repeat; 
         background-size: contain;
     }
     @include media-breakpoint-up(xl) {
@@ -306,11 +306,11 @@ $fontsize-list: (
     }
 }
 footer{
-    background-image:url("/images/footer-bg-sm.png"); 
+    background-image:url("../images/footer-bg-sm.png"); 
     background-size: cover;
     @include media-breakpoint-up(xl) {
         padding-top: 120px;
-        background-image:url("/images/footer-bg-lg.png"); 
+        background-image:url("../images/footer-bg-lg.png"); 
     }
     .footer-logo{
         display: block;

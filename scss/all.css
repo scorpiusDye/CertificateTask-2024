@@ -13029,7 +13029,7 @@ table {
   display: block;
   width: 64px;
   height: 64px;
-  background-image: url("/images/quote-left.png");
+  background-image: url("../images/quote-left.png");
   text-align: center;
   margin: 0 auto;
 }
@@ -13047,7 +13047,7 @@ table {
     display: block;
     width: 64px;
     height: 64px;
-    background-image: url("/images/quote-right.png");
+    background-image: url("../images/quote-right.png");
     margin-left: auto;
     right: -64px;
   }
@@ -13066,7 +13066,7 @@ table {
   width: 105%;
   z-index: -1;
   height: 6px;
-  background: url("/images/mark.png") no-repeat;
+  background: url("../images/mark.png") no-repeat;
   background-size: contain;
 }
 @media (min-width: 1200px) {
@@ -13158,13 +13158,13 @@ table {
 }
 
 footer {
-  background-image: url("/images/footer-bg-sm.png");
+  background-image: url("../images/footer-bg-sm.png");
   background-size: cover;
 }
 @media (min-width: 1200px) {
   footer {
     padding-top: 120px;
-    background-image: url("/images/footer-bg-lg.png");
+    background-image: url("../images/footer-bg-lg.png");
   }
 }
 footer .footer-logo {
