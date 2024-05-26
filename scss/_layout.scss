@@ -67,7 +67,8 @@ $fontsize-list: (
     }
 }
 .wrapper{
-    font-family: 'NOTO SANS TC' !important;
+    // font-family: 'NOTO SANS TC' !important;
+    font-family: "Noto Sans", sans-serif !important;
     @include media-breakpoint-up(xl) {
         margin-top: 96px ;
     }

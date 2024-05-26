@@ -12903,7 +12903,7 @@ table {
   }
 }
 .wrapper {
-  font-family: "NOTO SANS TC" !important;
+  font-family: "Noto Sans", sans-serif !important;
 }
 @media (min-width: 1200px) {
   .wrapper {
