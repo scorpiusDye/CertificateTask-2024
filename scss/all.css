@@ -71,7 +71,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans TC", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -12903,12 +12903,19 @@ table {
   }
 }
 .wrapper {
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: "NOTO SANS TC", sans-serif !important;
 }
 @media (min-width: 1200px) {
   .wrapper {
     margin-top: 96px;
   }
+}
+
+.hide-text {
+  font-size: 0;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .nav-style {
@@ -13170,6 +13177,13 @@ table {
   color: white;
   background-color: #212529;
 }
+@media (min-width: 1200px) {
+  .page-navigation .item:hover, .page-navigation .item:active, .page-navigation .item:focus {
+    color: #fff;
+    background-color: #212529;
+    transition: all 0.3s ease-in-out;
+  }
+}
 
 footer {
   background-image: url("../images/footer-bg-sm.png");
@@ -13199,4 +13213,33 @@ footer li {
 }
 footer li:last-child {
   margin-bottom: 0;
+}
+
+.ico-btn {
+  text-decoration: none;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+.ico-btn-active {
+  color: white;
+  background-color: #212529;
+  border: 1px solid #212529;
+}
+
+.icon-set-active {
+  color: #fff !important;
+}
+
+@media (min-width: 1200px) {
+  .ico-btn:hover, .ico-btn:active, .ico-btn:focus {
+    color: #fff;
+    background-color: #212529;
+    transition: all 0.3s ease-in-out;
+  }
+  .icon-set:hover, .icon-set:active, .icon-set:focus {
+    color: #fff !important;
+    transition: all 0.3s ease-in-out;
+  }
 }/*# sourceMappingURL=all.css.map */

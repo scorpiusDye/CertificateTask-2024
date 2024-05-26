@@ -67,11 +67,16 @@ $fontsize-list: (
     }
 }
 .wrapper{
-    // font-family: 'NOTO SANS TC' !important;
-    font-family: "Noto Sans", sans-serif !important;
+    font-family: "NOTO SANS TC", sans-serif !important;
     @include media-breakpoint-up(xl) {
         margin-top: 96px ;
     }
+}
+.hide-text{
+    font-size: 0;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .nav-style{
     z-index: 100;
@@ -316,6 +321,15 @@ $fontsize-list: (
         color:white;
         background-color: $dark;
     }
+    @include media-breakpoint-up(xl) {
+        .item{
+            &:hover,&:active,&:focus{
+                color: $white;
+                background-color: $dark;
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
 }
 footer{
     background-image:url("../images/footer-bg-sm.png"); 
@@ -341,6 +355,35 @@ footer{
         margin-bottom: 24px;
         &:last-child{
             margin-bottom: 0;
+        }
+    }
+}
+.ico-btn{
+    text-decoration: none;
+    color: $dark;
+    border: 1px solid $gray-300;
+    background-color: $white;
+}
+.ico-btn-active{
+    color:white;
+    background-color: $dark;
+    border: 1px solid $dark;
+}
+.icon-set-active{
+    color: $white !important;
+}
+@include media-breakpoint-up(xl) {
+    .ico-btn{
+        &:hover,&:active,&:focus{
+            color: $white;
+            background-color: $dark;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .icon-set{
+        &:hover,&:active,&:focus{
+            color: $white !important;
+            transition: all .3s ease-in-out;
         }
     }
 }
