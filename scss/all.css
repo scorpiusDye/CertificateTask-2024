@@ -12912,10 +12912,10 @@ table {
 }
 
 .hide-text {
-  font-size: 0;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+  color: transparent;
 }
 
 .nav-style {
@@ -12931,6 +12931,7 @@ table {
   }
 }
 .nav-style .logo {
+  background: url(../images/logo.svg) center center no-repeat;
   width: 74px;
   height: 33px;
   display: block;
@@ -13215,6 +13216,15 @@ footer li:last-child {
   margin-bottom: 0;
 }
 
+.ico-blk {
+  width: 50px;
+  height: 50px;
+}
+.ico-blk svg {
+  width: 50px;
+  height: 55px;
+}
+
 .ico-btn {
   text-decoration: none;
   color: #212529;
@@ -13227,8 +13237,7 @@ footer li:last-child {
   background-color: #212529;
   border: 1px solid #212529;
 }
-
-.icon-set-active {
+.ico-btn-active svg {
   color: #fff !important;
 }
 
@@ -13238,8 +13247,9 @@ footer li:last-child {
     background-color: #212529;
     transition: all 0.3s ease-in-out;
   }
-  .icon-set:hover, .icon-set:active, .icon-set:focus {
-    color: #fff !important;
+  .ico-btn:hover svg, .ico-btn:active svg, .ico-btn:focus svg {
+    color: #fff;
+    fill: #fff;
     transition: all 0.3s ease-in-out;
   }
 }/*# sourceMappingURL=all.css.map */
